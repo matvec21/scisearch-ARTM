@@ -1,0 +1,1442 @@
+C++
+Topic Modelling
+Robotics
+Reinforcement Learning
+Центральная предельная теорема
+Medicine
+Психология
+Архитектура
+История
+Социальное исследование
+Сети
+Графика
+Философия
+Музыка
+Пушкин
+Языковая модель
+Автомобиль
+Самолет
+Организм
+Спорт
+Neural Networks
+Deep Learning
+Computer Vision
+Natural Language Processing
+Support Vector Machines
+K-Means Clustering
+Linear Regression
+Logistic Regression
+Модели передачи доминирующей последовательности основаны на сложных рекуррентных или сверточных нейронных сетях, которые включают в себя кодер и декодер-преобразователь. Наиболее эффективные модели также связывают кодер и декодер посредством механизма внимания. Мы предлагаем новую простую сетевую архитектуру Transformer, основанную исключительно на механизмах внимания и полностью исключающую повторение и свертку данных. Эксперименты с двумя задачами машинного перевода показали, что эти модели превосходят по качеству, в то же время они более распараллеливаемы и требуют значительных затрат меньше времени на обучение. Наша модель выполнила задание по переводу с английского на немецкий на WMT 2014 28,4 BLEU, улучшив существующие лучшие результаты, включая ансамбли, более чем на 2 BLEU. В задании по переводу с английского на французский на WMT 2014 наша модель показала новый результат BLEU в 41,8 балла после обучения в течение 3,5 дней на восьми графических процессорах, что составляет лишь малую долю затрат на обучение лучших моделей из литературы. Мы показываем, что трансформатор хорошо подходит для решения других задач, успешно применяя его для анализа английского языка как с большими, так и с ограниченными учебными данными.
+Layer normalization (LayerNorm) has been successfully applied to various deep neural networks to help stabilize training and boost model convergence because of its capability in handling re-centering and re-scaling of both inputs and weight matrix. However, the computational overhead introduced by LayerNorm makes these improvements expensive and significantly slows the underlying network, e.g. RNN in particular. In this paper, we hypothesize that re-centering invariance in LayerNorm is dispensable and propose root mean square layer normalization, or RMSNorm. RMSNorm regularizes the summed inputs to a neuron in one layer according to root mean square (RMS), giving the model re-scaling invariance property and implicit learning rate adaptation ability. RMSNorm is computationally simpler and thus more efficient than LayerNorm. We also present partial RMSNorm, or pRMSNorm where the RMS is estimated from p% of the summed inputs without breaking the above properties. Extensive experiments on several tasks using diverse network architectures show that RMSNorm achieves comparable performance against LayerNorm but reduces the running time by 7%∼64% on different models. Source code is available at https://github.com/bzhangGo/rmsnorm
+Relying entirely on an attention mechanism, the Transformer introduced by Vaswani et al. (2017) achieves state-of-the-art results for machine translation. In contrast to recurrent and convolutional neural networks, it does not explicitly model relative or absolute position information in its structure. Instead, it requires adding representations of absolute positions to its inputs. In this work we present an alternative approach, extending the self-attention mechanism to efficiently consider representations of the relative positions, or distances between sequence elements. On the WMT 2014 English-to-German and English-to-French translation tasks, this approach yields improvements of 1.3 BLEU and 0.3 BLEU over absolute position representations, respectively. Notably, we observe that combining relative and absolute position representations yields no further improvement in translation quality. We describe an efficient implementation of our method and cast it as an instance of relation-aware self-attention mechanisms that can generalize to arbitrary graphlabeled inputs.
+We introduce LLaMA, a collection of foundation language models ranging from 7B to 65B parameters. We train our models on trillions of tokens, and show that it is possible to train state-of-the-art models using publicly available datasets exclusively, without resorting to proprietary and inaccessible datasets. In particular, LLaMA-13B outperforms GPT-3 (175B) on most benchmarks, and LLaMA65B is competitive with the best models, Chinchilla-70B and PaLM-540B. We release all our models to the research community1.
+The ability to control for the kinds of information encoded in neural representation has a variety of use cases, especially in light of the challenge of interpreting these models. We present Iterative Null-space Projection (INLP), a novel method for removing information from neural representations. Our method is based on repeated training of linear classifiers that predict a certain property we aim to remove, followed by projection of the representations on their null-space. By doing so, the classifiers become oblivious to that target property, making it hard to linearly separate the data according to it. While applicable for multiple uses, we evaluate our method on bias and fairness use-cases, and show that our method is able to mitigate bias in word embeddings, as well as to increase fairness in a setting of multi-class classification.
+Random Forest
+Gradient Boosting
+XGBoost
+LightGBM
+CatBoost
+TensorFlow
+PyTorch
+Keras
+Scikit-learn
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Tableau
+Power BI
+Big Data
+Hadoop
+Spark
+Kafka
+Flink
+Blockchain
+Cryptocurrency
+Bitcoin
+Ethereum
+Smart Contracts
+Cybersecurity
+Penetration Testing
+Cryptography
+Encryption
+Hashing
+Steganography
+Malware Analysis
+Reverse Engineering
+Internet of Things (IoT)
+Cloud Computing
+AWS
+Azure
+Google Cloud Platform
+Docker
+Kubernetes
+Microservices
+Serverless Architecture
+DevOps
+Agile
+Scrum
+Kanban
+Lean Software Development
+Software Engineering
+Design Patterns
+Object-Oriented Programming
+Functional Programming
+Procedural Programming
+Aspect-Oriented Programming
+Java
+Python
+JavaScript
+TypeScript
+C#
+Go
+Rust
+Swift
+Kotlin
+Scala
+Haskell
+Erlang
+Elixir
+Clojure
+Lisp
+Prolog
+Assembly
+Fortran
+COBOL
+Pascal
+Delphi
+Basic
+SQL
+NoSQL
+MongoDB
+PostgreSQL
+MySQL
+Oracle Database
+Microsoft SQL Server
+Redis
+Cassandra
+Elasticsearch
+Graph Databases
+Neo4j
+Semantic Web
+Ontology
+Knowledge Graph
+Linked Data
+RDF
+SPARQL
+OWL
+Bioinformatics
+Genomics
+Proteomics
+Metabolomics
+Transcriptomics
+DNA Sequencing
+CRISPR
+Gene Editing
+Stem Cells
+Cloning
+Regenerative Medicine
+Immunotherapy
+Vaccines
+Antibiotics
+Virology
+Epidemiology
+Public Health
+Global Health
+Health Economics
+Telemedicine
+E-Health
+M-Health
+Wearable Technology
+Biomedical Engineering
+Medical Imaging
+MRI
+CT Scan
+Ultrasound
+X-Ray
+PET Scan
+Neuroscience
+Brain-Computer Interface
+Cognitive Science
+Psychiatry
+Clinical Psychology
+Developmental Psychology
+Social Psychology
+Personality Psychology
+Industrial-Organizational Psychology
+Educational Psychology
+Forensic Psychology
+Sports Psychology
+Sociology
+Anthropology
+Archaeology
+Ethnography
+Political Science
+International Relations
+Geopolitics
+Diplomacy
+Human Rights
+International Law
+Constitutional Law
+Criminal Law
+Civil Law
+Administrative Law
+Labor Law
+Family Law
+Intellectual Property Law
+Copyright
+Patents
+Trademarks
+Economics
+Macroeconomics
+Microeconomics
+Econometrics
+Game Theory
+Behavioral Economics
+Development Economics
+Environmental Economics
+Financial Economics
+International Economics
+Labor Economics
+Public Economics
+Urban Economics
+Finance
+Accounting
+Marketing
+Management
+Human Resource Management
+Supply Chain Management
+Logistics
+Operations Management
+Strategic Management
+Entrepreneurship
+Innovation
+Business Ethics
+Corporate Social Responsibility
+Sustainability
+Climate Change
+Global Warming
+Greenhouse Gases
+Renewable Energy
+Solar Energy
+Wind Energy
+Hydropower
+Geothermal Energy
+Biomass Energy
+Nuclear Energy
+Fossil Fuels
+Coal
+Oil
+Natural Gas
+Fracking
+Carbon Capture and Storage
+Electric Vehicles
+Autonomous Vehicles
+Drones
+Robotics
+Mechatronics
+Nanotechnology
+Materials Science
+Metallurgy
+Ceramics
+Polymers
+Composites
+Semiconductors
+Superconductors
+Photonics
+Optics
+Lasers
+Quantum Mechanics
+Quantum Computing
+Quantum Cryptography
+Particle Physics
+Standard Model
+Higgs Boson
+Dark Matter
+Dark Energy
+String Theory
+General Relativity
+Special Relativity
+Astrophysics
+Cosmology
+Big Bang
+Black Holes
+Neutron Stars
+Exoplanets
+Astrobiology
+Space Exploration
+NASA
+ESA
+SpaceX
+Mars
+Moon
+Solar System
+Milky Way
+Galaxy
+Universe
+Multiverse
+Mathematics
+Algebra
+Calculus
+Geometry
+Topology
+Number Theory
+Combinatorics
+Graph Theory
+Logic
+Set Theory
+Category Theory
+Probability Theory
+Statistics
+Stochastic Processes
+Time Series Analysis
+Optimization
+Operations Research
+Differential Equations
+Dynamical Systems
+Chaos Theory
+Fractals
+Complex Analysis
+Real Analysis
+Functional Analysis
+Numerical Analysis
+Computer Algebra Systems
+Mathematica
+Maple
+MATLAB
+Simulink
+LabVIEW
+Engineering
+Civil Engineering
+Structural Engineering
+Geotechnical Engineering
+Transportation Engineering
+Environmental Engineering
+Mechanical Engineering
+Electrical Engineering
+Electronics
+Telecommunications
+Signal Processing
+Control Systems
+Chemical Engineering
+Process Engineering
+Industrial Engineering
+Manufacturing
+Aerospace Engineering
+Automotive Engineering
+Marine Engineering
+Naval Architecture
+Architecture
+Urban Planning
+Landscape Architecture
+Interior Design
+Industrial Design
+Graphic Design
+Fashion Design
+Art History
+Visual Arts
+Painting
+Sculpture
+Photography
+Film Studies
+Musicology
+Music Theory
+Ethnomusicology
+Theatre Studies
+Dance Studies
+Performance Studies
+Literature
+Literary Theory
+Comparative Literature
+Creative Writing
+Poetry
+Fiction
+Non-fiction
+Drama
+Classics
+Ancient History
+Medieval History
+Early Modern History
+Modern History
+Contemporary History
+World History
+European History
+American History
+Asian History
+African History
+Latin American History
+Russian History
+Soviet History
+Cold War
+World War I
+World War II
+Holocaust
+Genocide Studies
+Peace and Conflict Studies
+Security Studies
+Terrorism Studies
+Intelligence Studies
+Military History
+Religious Studies
+Theology
+Philosophy of Religion
+Sociology of Religion
+Christianity
+Islam
+Judaism
+Buddhism
+Hinduism
+Sikhism
+Taoism
+Confucianism
+Shinto
+Atheism
+Secularism
+Philosophy
+Metaphysics
+Epistemology
+Ethics
+Aesthetics
+Logic
+Political Philosophy
+Social Philosophy
+Philosophy of Science
+Philosophy of Mind
+Philosophy of Language
+Phenomenology
+Existentialism
+Hermeneutics
+Deconstruction
+Postmodernism
+Structuralism
+Post-structuralism
+Critical Theory
+Feminist Theory
+Queer Theory
+Gender Studies
+Women's Studies
+Men's Studies
+Disability Studies
+Critical Race Theory
+Postcolonial Studies
+Cultural Studies
+Media Studies
+Communication Studies
+Journalism
+Public Relations
+Advertising
+Linguistics
+Phonetics
+Phonology
+Morphology
+Syntax
+Semantics
+Pragmatics
+Sociolinguistics
+Psycholinguistics
+Neurolinguistics
+Computational Linguistics
+Historical Linguistics
+Applied Linguistics
+Second Language Acquisition
+Translation Studies
+Education
+Pedagogy
+Curriculum Studies
+Educational Technology
+Special Education
+Higher Education
+Adult Education
+Vocational Education
+Early Childhood Education
+Science Education
+Mathematics Education
+Literacy
+Numeracy
+Geography
+Physical Geography
+Human Geography
+Geology
+Geophysics
+Geochemistry
+Mineralogy
+Petrology
+Volcanology
+Seismology
+Tectonics
+Paleontology
+Oceanography
+Meteorology
+Climatology
+Hydrology
+Glaciology
+Soil Science
+Agriculture
+Agronomy
+Horticulture
+Forestry
+Fisheries
+Food Science
+Nutrition
+Dietetics
+Gastronomy
+Tourism
+Hospitality
+Sports Science
+Kinesiology
+Exercise Physiology
+Biomechanics
+Coaching
+Physical Education
+Recreation
+Leisure Studies
+Library Science
+Information Science
+Archival Science
+Museum Studies
+Heritage Studies
+Conservation
+Restoration
+Numismatics
+Philately
+Genealogy
+Heraldry
+Vexillology
+Cryptology
+Ufology
+Parapsychology
+Pseudo-science
+Fringe Science
+Alternative Medicine
+Homeopathy
+Acupuncture
+Chiropractic
+Osteopathy
+Naturopathy
+Ayurveda
+Traditional Chinese Medicine
+Yoga
+Meditation
+Mindfulness
+Wellness
+Self-help
+Productivity
+Time Management
+Leadership
+Motivation
+Creativity
+Innovation
+Design Thinking
+Problem Solving
+Critical Thinking
+Decision Making
+Negotiation
+Conflict Resolution
+Communication Skills
+Emotional Intelligence
+Soft Skills
+Hard Skills
+Remote Work
+Gig Economy
+Freelancing
+Digital Nomad
+Startups
+Venture Capital
+Angel Investing
+Crowdfunding
+Personal Finance
+Investing
+Stock Market
+Real Estate
+Insurance
+Taxes
+Retirement Planning
+Estate Planning
+Minimalism
+Simple Living
+Zero Waste
+Veganism
+Vegetarianism
+Animal Rights
+Human Rights
+Social Justice
+Inequality
+Poverty
+Hunger
+Water Scarcity
+Sanitation
+Education for All
+Gender Equality
+Decent Work
+Economic Growth
+Industry, Innovation and Infrastructure
+Reduced Inequalities
+Sustainable Cities and Communities
+Responsible Consumption and Production
+Climate Action
+Life Below Water
+Life on Land
+Peace, Justice and Strong Institutions
+Partnerships for the Goals
+United Nations
+Sustainable Development Goals
+WHO
+UNESCO
+UNICEF
+WTO
+IMF
+World Bank
+OECD
+NATO
+EU
+ASEAN
+BRICS
+G7
+G20
+Interpol
+Red Cross
+Doctors Without Borders
+Greenpeace
+WWF
+Amnesty International
+Human Rights Watch
+Nobel Prize
+Pulitzer Prize
+Fields Medal
+Turing Award
+Oscar
+Grammy
+Emmy
+Tony
+Olympics
+World Cup
+Super Bowl
+Tour de France
+Wimbledon
+Formula 1
+Chess
+Go
+Poker
+Video Games
+Esports
+Virtual Reality
+Augmented Reality
+Mixed Reality
+Metaverse
+NFT
+Web3
+DAO
+DeFi
+GameFi
+SocialFi
+EdTech
+FinTech
+MedTech
+BioTech
+AgriTech
+CleanTech
+GreenTech
+SpaceTech
+MilitaryTech
+LegalTech
+PropTech
+InsurTech
+RetailTech
+FoodTech
+FashionTech
+TravelTech
+SportTech
+ArtTech
+MusicTech
+SexTech
+FemTech
+AgeTech
+PetTech
+BabyTech
+HomeTech
+AutoTech
+AeroTech
+MarineTech
+NanoTech
+NeuroTech
+PsyTech
+QuantumTech
+CryptoTech
+BlockTech
+AI Safety
+AI Ethics
+Explainable AI
+Trustworthy AI
+Responsible AI
+Human-Centered AI
+AI Alignment
+Singularity
+Transhumanism
+Posthumanism
+Cyborgs
+Androids
+Robots
+Automation
+Future of Work
+Universal Basic Income
+Digital Divide
+Digital Literacy
+Digital Citizenship
+Digital Rights
+Privacy
+Surveillance
+Censorship
+Propaganda
+Fake News
+Disinformation
+Misinformation
+Echo Chambers
+Filter Bubbles
+Polarization
+Radicalization
+Extremism
+Terrorism
+War
+Peace
+Conflict
+Violence
+Nonviolence
+Pacifism
+Militarism
+Nationalism
+Patriotism
+Globalism
+Cosmopolitanism
+Multiculturalism
+Interculturalism
+Assimilation
+Integration
+Segregation
+Discrimination
+Racism
+Sexism
+Ageism
+Ableism
+Homophobia
+Transphobia
+Xenophobia
+Islamophobia
+Antisemitism
+Colonialism
+Imperialism
+Neocolonialism
+Decolonization
+Slavery
+Feudalism
+Capitalism
+Socialism
+Communism
+Anarchism
+Fascism
+Nazism
+Totalitarianism
+Authoritarianism
+Democracy
+Republic
+Monarchy
+Oligarchy
+Theocracy
+Technocracy
+Meritocracy
+Plutocracy
+Kleptocracy
+Bureaucracy
+Civil Society
+NGOs
+Nonprofits
+Charity
+Philanthropy
+Volunteering
+Activism
+Protest
+Revolution
+Reform
+Policy
+Regulation
+Governance
+Administration
+Management
+Leadership
+Strategy
+Tactics
+Logistics
+Operations
+Planning
+Execution
+Evaluation
+Assessment
+Audit
+Review
+Feedback
+Improvement
+Quality
+Excellence
+Performance
+Productivity
+Efficiency
+Effectiveness
+Optimization
+Innovation
+Creativity
+Design
+Art
+Science
+Technology
+Engineering
+Mathematics
+Investor
+Banker
+Accountant
+Consultant
+Analyst
+Programmer
+Developer
+Administrator
+Technician
+Mechanic
+Electrician
+Plumber
+Carpenter
+Builder
+Cleaner
+Gardener
+Nanny
+Babysitter
+Housekeeper
+Butler
+Maid
+Servant
+Slave
+Master
+King
+Queen
+Prince
+Princess
+Duke
+Duchess
+Lord
+Lady
+Knight
+Squire
+Peasant
+Serf
+Citizen
+Alien
+Immigrant
+Refugee
+Expat
+Tourist
+Traveler
+Explorer
+Adventurer
+Pioneer
+Settler
+Native
+Indigenous
+Aboriginal
+Nomad
+Gypsy
+Vagabond
+Hobo
+Beggar
+Thief
+Criminal
+Prisoner
+Victim
+Survivor
+Hero
+Villain
+Protagonist
+Antagonist
+Character
+Plot
+Setting
+Theme
+Style
+Tone
+Mood
+Voice
+Narrative
+Story
+Tale
+Myth
+Legend
+Fable
+Parable
+Allegory
+Metaphor
+Simile
+Symbol
+Irony
+Satire
+Parody
+Comedy
+Tragedy
+Drama
+Romance
+Horror
+Thriller
+Mystery
+Fantasy
+Science Fiction
+Western
+Musical
+Action
+Adventure
+Animation
+Documentary
+Biography
+Autobiography
+Memoir
+Diary
+Journal
+Letter
+Email
+Message
+Post
+Tweet
+Blog
+Vlog
+Podcast
+Video
+Image
+Picture
+Photo
+Drawing
+Painting
+Sculpture
+Installation
+Performance
+Exhibition
+Gallery
+Museum
+Library
+Archive
+Database
+Website
+App
+Software
+Hardware
+Network
+Internet
+Web
+Cloud
+Data
+Information
+Knowledge
+Wisdom
+Truth
+Fact
+Reality
+Fiction
+Imagination
+Dream
+Nightmare
+Sleep
+Wakefulness
+Consciousness
+Unconsciousness
+Subconsciousness
+Mind
+Brain
+Body
+Soul
+Spirit
+Ghost
+God
+Devil
+Angel
+Demon
+Heaven
+Hell
+Purgatory
+Limbo
+Nirvana
+Samsara
+Karma
+Dharma
+Tao
+Zen
+Yoga
+Meditation
+Prayer
+Worship
+Ritual
+Ceremony
+Festival
+Holiday
+Celebration
+Party
+Gathering
+Meeting
+Conference
+Seminar
+Workshop
+Class
+Lesson
+Lecture
+Tutorial
+Course
+Curriculum
+Syllabus
+Exam
+Test
+Quiz
+Assignment
+Homework
+Project
+Thesis
+Dissertation
+Degree
+Diploma
+Certificate
+License
+Permit
+Visa
+Passport
+ID
+Card
+Ticket
+Pass
+Key
+Lock
+Door
+Window
+Wall
+Floor
+Ceiling
+Roof
+House
+Home
+Building
+Structure
+City
+Town
+Village
+Country
+Nation
+State
+Province
+Region
+Continent
+Bayesian Inference
+Марковские процессы
+Теория игр
+Математическая статистика
+Дифференциальные уравнения
+Теория вероятностей
+Математический анализ
+Линейная алгебра
+Дискретная математика
+Теория чисел
+Алгоритмы
+Структуры данных
+Криптография
+Квантовые вычисления
+Параллельные вычисления
+Облачные вычисления
+Микросервисы
+Базы данных
+SQL
+NoSQL
+Графовые базы данных
+Анализ данных
+Data Mining
+Big Data
+Временные ряды
+Анализ текста
+Сентимент-анализ
+Машинный перевод
+Распознавание речи
+Компьютерная лингвистика
+Цифровая обработка сигналов
+Сжатие данных
+Компьютерное зрение
+Обработка изображений
+Генеративные модели
+GANs
+VAE
+Трансформеры
+BERT
+GPT
+Рекуррентные сети
+LSTM
+Сверточные сети
+ResNet
+MobileNet
+Оптимизация нейросетей
+Квантование моделей
+Дистилляция знаний
+Обучение с подкреплением
+Multi-agent systems
+Эволюционные алгоритмы
+Генетические алгоритмы
+Роевой интеллект
+Нечеткая логика
+Экспертные системы
+Компиляторы
+Операционные системы
+Виртуализация
+Контейнеризация
+Docker
+Kubernetes
+Сетевые протоколы
+TCP/IP
+HTTP/3
+Беспроводные сети
+5G
+Интернет вещей
+Кибербезопасность
+Защита информации
+Стеганография
+Биометрия
+Робототехника
+Кинематика роботов
+Динамика полета
+Аэроупругость
+Композитные материалы
+Нанотехнологии
+Микроэлектроника
+Схемотехника
+Материаловедение
+Металлургия
+Химия полимеров
+Органическая химия
+Неорганическая химия
+Физическая химия
+Квантовая химия
+Биохимия
+Молекулярная биология
+Клеточная биология
+Генетика
+Геномика
+Протеомика
+Биоинформатика
+Микробиология
+Вирусология
+Иммунология
+Фармакология
+Токсикология
+Физиология человека
+Анатомия
+Нейробиология
+Нейрофизиология
+Психофизиология
+Клиническая психология
+Когнитивная психология
+Поведенческая психология
+Социальная психология
+Психология личности
+Психодиагностика
+Педагогика
+Образовательные технологии
+Социология
+Социология культуры
+Демография
+Антропология
+Этнография
+Археология
+Палеонтология
+Геология
+Минералогия
+Геофизика
+Метеорология
+Климатология
+Океанология
+Экология
+Биоразнообразие
+Охрана природы
+Сельское хозяйство
+Агрономия
+Почвоведение
+Ветеринария
+Медицина
+Кардиология
+Неврология
+Онкология
+Педиатрия
+Хирургия
+Травматология
+Стоматология
+Эпидемиология
+Общественное здоровье
+Биоэтика
+Физика
+Квантовая физика
+Физика твердого тела
+Оптика
+Лазерная физика
+Акустика
+Электродинамика
+Термодинамика
+Статистическая физика
+Астрономия
+Астрофизика
+Космология
+Астробиология
+Математика
+Топология
+Теория категорий
+Функциональный анализ
+Комплексный анализ
+Численные методы
+Философия науки
+Эпистемология
+Метафизика
+Этика
+Логика
+Эстетика
+История философии
+Античная философия
+Средневековая философия
+Немецкая классическая философия
+Феноменология
+Экзистенциализм
+Постмодернизм
+Лингвистика
+Семиотика
+Фонетика
+Лексикология
+Грамматика
+История языка
+Русский язык
+Английский язык
+Китайский язык
+Литературоведение
+Поэтика
+Теория литературы
+Сравнительное литературоведение
+Античная литература
+Русская литература XIX века
+Зарубежная литература XX века
+Толстой
+Достоевский
+Чехов
+Шекспир
+Гете
+Данте
+Гомер
+Искусствоведение
+История искусства
+Живопись
+Скульптура
+Архитектура
+Графика
+Дизайн
+Фотография
+Киноискусство
+Театр
+Опера
+Балет
+Музыковедение
+Теория музыки
+Гармония
+Полифония
+История музыки
+Народная музыка
+Джаз
+Рок-музыка
+Электронная музыка
+Культурология
+Культурная антропология
+История культуры
+Массовая культура
+Межкультурная коммуникация
+Религиоведение
+История религии
+Мифология
+Буддизм
+Христианство
+Ислам
+Экономика
+Макроэкономика
+Микроэкономика
+Эконометрика
+Финансы
+Банковское дело
+Инвестиции
+Рынок ценных бумаг
+Страхование
+Бухгалтерский учет
+Аудит
+Менеджмент
+Стратегический менеджмент
+Управление персоналом
+Маркетинг
+Брендинг
+Реклама
+PR
+Логистика
+Управление цепями поставок
+Государственное управление
+Политология
+Политические режимы
+Международные отношения
+Геополитика
+Конфликтология
+Право
+Теория государства и права
+Конституционное право
+Гражданское право
+Уголовное право
+Административное право
+Международное право
+Криминология
+Криминалистика
+Социальная работа
+Психологическое консультирование
+Психотерапия
+Коучинг
+Медиация
+Социальная педагогика
+Спортивная тренировка
+Физическая культура
+Физиология спорта
+Спортивная медицина
+Биомеханика спорта
+Психология спорта
+Игровые виды спорта
+Футбол
+Баскетбол
+Хоккей
+Теннис
+Легкая атлетика
+Плавание
+Гимнастика
+Единоборства
+Туризм
+Рекреация
+Гостиничное дело
+Ресторанный бизнес
+Транспорт
+Логистика
+Грузоперевозки
+Пассажирские перевозки
+Безопасность движения
+Автомобилестроение
+Двигателестроение
+Альтернативная энергетика
+Электромобили
+Водородная энергетика
+Атомная энергетика
+Возобновляемая энергия
+Солнечная энергетика
+Ветроэнергетика
+Биоэнергетика
+Энергосбережение
+Энергоэффективность
+Строительство
+Строительные конструкции
+Сопротивление материалов
+Геотехника
+Гидротехника
+Теплотехника
+Вентиляция
+Водоснабжение
+Градостроительство
+Ландшафтная архитектура
+Дизайн интерьера
+Промышленный дизайн
+Эргономика
+Техносферная безопасность
+Охрана труда
+Экологическая безопасность
+Чрезвычайные ситуации
+Пожарная безопасность
+Машиностроение
+Детали машин
+Технология машиностроения
+Роботизированные комплексы
+Гидравлика
+Пневматика
+Электротехника
+Электропривод
+Электроснабжение
+Светотехника
+Электроника
+Силовая электроника
+Промышленная электроника
+Цифровая электроника
+Аналоговая электроника
+Схемотехника
+Микропроцессоры
+Микроконтроллеры
+Программирование
+Python
+Java
+C#
+JavaScript
+PHP
+Ruby
+Go
+Rust
+Swift
+Kotlin
+Web-разработка
+Фронтенд
+Бэкенд
+Мобильная разработка
+Разработка игр
+Unity
+Unreal Engine
+Тестирование ПО
+Качество ПО
+DevOps
+CI/CD
+Git
+Linux
+Администрирование
+Сетевое администрирование
+Системное программирование
+Встраиваемые системы
+IoT
+Умный дом
+Промышленный интернет
+Цифровые двойники
+Виртуальная реальность
+VR
+AR
+Дополненная реальность
+Смешанная реальность
+HCI
+Человеко-компьютерное взаимодействие
+Интерфейсы
+Юзабилити
+UX/UI дизайн
+Технический перевод
+Академическое письмо
+Научная коммуникация
+Наукометрия
+Патентоведение
+Инновации
+Трансфер технологий
+Управление проектами
+Бережливое производство
+Шесть сигм
+Теория решения изобретательских задач
+ТРИЗ
+Методология науки
+Методы исследования
+Научный эксперимент
+Математическое моделирование
+Компьютерное моделирование
+Имитационное моделирование
+Системный анализ
+Теория систем
+Кибернетика
+Синергетика
+Теория хаоса
+Фракталы
+Нейросетевые технологии
+Искусственный интеллект
+Сильный ИИ
+Слабый ИИ
+Этика ИИ
+Доверенный ИИ
+Объяснимый ИИ
+XAI
